@@ -1,4 +1,7 @@
 @media (max-width: 1024px) {
+  .container {
+    max-width: 950px;
+  }
   .nav-links {
     display: none;
     opacity: 0;
