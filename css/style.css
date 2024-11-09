@@ -101,6 +101,9 @@ header {
   width: 100%;
   animation: revealNav 1s 1;
 }
+.mobile-nav-icon {
+  display: none;
+}
 @keyframes revealNav {
   from {
     opacity: 0;

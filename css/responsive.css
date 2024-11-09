@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav-links.nav-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(112, 112, 112, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 300;
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-nav-icon {
+    display: block;
+    position: absolute;
+    right: 10rem;
+    background: transparent;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: #fff;
+    z-index: 301;
+  }
+}
