@@ -388,3 +388,32 @@ header {
 .register-form button {
   align-self: end;
 }
+/* FAQ Section */
+.faq-section {
+  background: #f9f9f9;
+}
+.faq-container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.faq-content {
+  background: #f0f0f0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq-question,
+.faq-icon {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.faq-answer {
+  background: #fff;
+  padding: 2rem 4rem;
+}
+.faq-answer p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
