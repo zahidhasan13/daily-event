@@ -417,3 +417,30 @@ header {
   font-size: 1.4rem;
   font-weight: 500;
 }
+/* Venue Section css*/
+.venue-section {
+  background-image: url(../images/venue-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.venue-container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.venue-title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.venue-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 50rem;
+  margin: 2rem 0;
+}
+.venue-address {
+  font-size: 2rem;
+  font-weight: 600;
+}
