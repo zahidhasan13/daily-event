@@ -444,3 +444,18 @@ header {
   font-size: 2rem;
   font-weight: 600;
 }
+/* Sponsors Container */
+.sponsors-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.sponsors {
+  background: #f9f9f9;
+  padding: 6rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f2545f;
+  text-transform: uppercase;
+  text-align: center;
+}
