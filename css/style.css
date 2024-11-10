@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .section {
@@ -343,4 +343,48 @@ header {
 .speaker-desc {
   font-size: 1.4rem;
   font-weight: 500;
+}
+/* Register Section */
+.register-section {
+  background-image: url(../images/register-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.register-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+.register-text {
+  color: #fff;
+  margin-right: 5rem;
+}
+.register-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.register-subtitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 2.4rem 0;
+}
+.register-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.register-form input {
+  padding: 1.5rem;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 1.4rem;
+}
+.register-form button {
+  align-self: end;
 }
