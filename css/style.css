@@ -281,3 +281,66 @@ header {
   font-size: 1.2rem;
   font-weight: 500;
 }
+/* Programs Section */
+.program-container {
+  width: 95rem;
+}
+.tabs-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5rem;
+}
+.program-tab {
+  background: transparent;
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.program-tab-active {
+  color: #f2545f;
+  border-bottom: 1px solid #707070;
+}
+.program-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.program-details {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.program-details img {
+  width: 15rem;
+  border-radius: 50%;
+  align-self: start;
+}
+.program-time {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.time,
+.room {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.speaker-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.speaker-name {
+  font-size: 1.2rem;
+  color: #707070;
+  margin: 1rem 0;
+}
+.speaker-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
