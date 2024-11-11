@@ -27,3 +27,28 @@ navLinks.addEventListener("click", (e) => {
     document.querySelector(attr).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+///////////////////////
+// Navbar Sticky
+///////////////////////
+const nav = document.querySelector(".nav");
+const header = document.querySelector(".header");
+const hero = document.querySelector(".hero");
+const navHeight = nav.getBoundingClientRect().height;
+
+const sticky = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
+
+const heroObs = new IntersectionObserver(sticky, {
+  root: null,
+  threshold: 0.9,
+  rootMargin: `${navHeight}px`,
+});
+
+heroObs.observe(hero);
