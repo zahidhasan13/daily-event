@@ -17,7 +17,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(112, 112, 112, 0.9);
+    background-color: rgb(112, 112, 112, 0.8);
     backdrop-filter: blur(10px);
     z-index: 300;
     opacity: 1;
