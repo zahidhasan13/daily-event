@@ -460,7 +460,77 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
-
+/* contact CSS */
+.contact-section {
+  background-image: url(../images/contact-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.contact-container {
+  width: 100rem;
+  margin: 0 auto;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: center;
+}
+.contact-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.contact-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 2rem 0 4rem 0;
+}
+.btn-download {
+  background: #f2545f;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+.btn-download:hover {
+  background: #222222;
+}
+.contact-form {
+  background: #fff;
+  padding: 6rem 4rem;
+}
+.form-title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.form-control input,
+.form-control textarea {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+  color: #707070;
+}
+.btn-send {
+  background: #222222;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  align-self: start;
+}
+.btn-send:hover {
+  background: #f2545f;
+}
 /* Footer */
 .footer {
   text-align: center;
