@@ -17,7 +17,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(112, 112, 112, 0.6);
+    background-color: rgb(112, 112, 112, 0.9);
     backdrop-filter: blur(10px);
     z-index: 300;
     opacity: 1;
@@ -25,12 +25,142 @@
   }
   .mobile-nav-icon {
     display: block;
-    position: absolute;
-    right: 10rem;
     background: transparent;
     height: 3.5rem;
     width: 3.5rem;
     color: #fff;
     z-index: 301;
+  }
+  .video-content {
+    gap: 2rem;
+  }
+  .video-youtube iframe {
+    width: 100%;
+  }
+  .faq-container,
+  .venue-container,
+  .contact-container {
+    max-width: 80rem;
+  }
+  .program-container {
+    width: 70rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .hero {
+    height: 70vh;
+  }
+  .overview-content {
+    gap: 2rem;
+  }
+  .video-content {
+    display: block;
+    width: 85%;
+  }
+  .video-text {
+    margin-bottom: 5rem;
+  }
+  .speaker-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .faq-container {
+    max-width: 60rem;
+  }
+  .venue-container,
+  .contact-container {
+    max-width: 70rem;
+  }
+  .sponsors-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .hidden {
+    display: none;
+  }
+  .nav {
+    height: 6rem;
+    padding: 0 2rem;
+  }
+  .sticky .nav {
+    height: 6rem;
+  }
+  .logo a {
+    font-size: 2rem;
+  }
+  .mobile-nav-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .hero-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .overview-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .overview-text h3 {
+    font-size: 2.2rem;
+  }
+  .detail-contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video-content {
+    width: 100%;
+  }
+  .video-text h3 {
+    font-size: 2rem;
+  }
+  .speaker-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .program-container {
+    width: 100%;
+  }
+  .program-details {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .program-details img {
+    width: 20rem;
+  }
+  .register-content {
+    grid-template-columns: 1fr;
+  }
+  .register-text {
+    margin-bottom: 4rem;
+  }
+  .faq-question,
+  .faq-icon {
+    font-size: 1.8rem;
+  }
+  .sponsors-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-container,
+  .venue-container,
+  .faq-section {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .venue-desc {
+    width: 100%;
+  }
+  .contact-content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

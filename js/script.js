@@ -48,7 +48,6 @@ const sticky = (entries, observer) => {
 const heroObs = new IntersectionObserver(sticky, {
   root: null,
   threshold: 0.9,
-  rootMargin: `${navHeight}px`,
 });
 
 heroObs.observe(hero);
