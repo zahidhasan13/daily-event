@@ -77,3 +77,34 @@ const obsHero = new IntersectionObserver(scroll, {
 });
 
 obsHero.observe(hero);
+
+///////////////
+// Active Section
+///////////////
+const sections = document.querySelectorAll(".section");
+const navLink = document.querySelectorAll(".nav-link");
+
+const removeActiveClasses = () => {
+  navLink.forEach((link) => {
+    link.classList.remove("nav-active");
+  });
+};
+
+const sectionObserverCallback = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      removeActiveClasses();
+      document
+        .querySelector(`a[href="#${entry.target.id}"]`)
+        .classList.add("nav-active");
+    }
+  });
+};
+
+const sectionObserver = new IntersectionObserver(sectionObserverCallback, {
+  root: null,
+  threshold: 0.2,
+});
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});

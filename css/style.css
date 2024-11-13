@@ -577,10 +577,9 @@ img {
   font-size: 2.4rem;
   cursor: pointer;
   z-index: 2000;
-  transition: all 1s;
+  transition: all 0.3s;
 }
 .scroll-btn {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(2rem);
 }
