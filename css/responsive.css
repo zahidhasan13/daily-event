@@ -49,7 +49,11 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 90%;
+  }
+  .section-title {
+    font-size: 2.8rem;
+    font-weight: 600;
   }
   .hero {
     height: 70vh;
@@ -69,11 +73,16 @@
     gap: 5rem;
   }
   .faq-container {
-    max-width: 60rem;
+    max-width: 75%;
   }
-  .venue-container,
-  .contact-container {
-    max-width: 70rem;
+  .venue-container {
+    max-width: 80%;
+  }
+  .contact-content {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 3rem 2rem;
   }
   .sponsors-container {
     grid-template-columns: repeat(2, 1fr);
@@ -82,24 +91,13 @@
 @media (max-width: 576px) {
   .container {
     width: 100%;
-    padding: 0 2rem;
-  }
-  .hidden {
-    display: none;
   }
   .nav {
     height: 6rem;
     padding: 0 2rem;
   }
-  .sticky .nav {
-    height: 6rem;
-  }
-  .logo a {
-    font-size: 2rem;
-  }
-  .mobile-nav-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+  .hidden {
+    display: none;
   }
   .hero {
     height: 100vh;
@@ -112,17 +110,11 @@
   .overview-content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .overview-text h3 {
-    font-size: 2.2rem;
-  }
   .detail-contents {
     grid-template-columns: repeat(1, 1fr);
   }
   .video-content {
     width: 100%;
-  }
-  .video-text h3 {
-    font-size: 2rem;
   }
   .speaker-details {
     grid-template-columns: repeat(1, 1fr);
@@ -131,36 +123,33 @@
     width: 100%;
   }
   .program-details {
-    flex-direction: column;
-    padding: 0 2rem;
+    display: block;
   }
   .program-details img {
-    width: 20rem;
+    margin-bottom: 3rem;
   }
   .register-content {
     grid-template-columns: 1fr;
   }
   .register-text {
-    margin-bottom: 4rem;
+    margin-right: 0rem;
+    margin-bottom: 5rem;
   }
-  .faq-question,
-  .faq-icon {
-    font-size: 1.8rem;
+  .faq-container {
+    max-width: 100%;
   }
-  .sponsors-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .contact-container,
-  .venue-container,
-  .faq-section {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .venue-container {
+    max-width: 100%;
+    margin: 0 2rem;
   }
   .venue-desc {
     width: 100%;
   }
+  .sponsors-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .contact-content {
     grid-template-columns: repeat(1, 1fr);
+    width: 100%;
   }
 }

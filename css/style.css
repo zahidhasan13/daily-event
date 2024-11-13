@@ -290,7 +290,7 @@ img {
 }
 /* Programs Section */
 .program-container {
-  width: 95rem;
+  width: 78%;
 }
 .tabs-container {
   display: flex;
@@ -400,7 +400,7 @@ img {
   background: #f9f9f9;
 }
 .faq-container {
-  max-width: 100rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 .faq-content {
@@ -433,7 +433,7 @@ img {
   background-size: cover;
 }
 .venue-container {
-  max-width: 100rem;
+  max-width: 80%;
   margin: 0 auto;
 }
 .venue-title {
@@ -475,11 +475,9 @@ img {
   background-position: center top;
   background-size: cover;
 }
-.contact-container {
-  width: 100rem;
-  margin: 0 auto;
-}
 .contact-content {
+  width: 80%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
