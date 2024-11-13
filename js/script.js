@@ -51,3 +51,29 @@ const heroObs = new IntersectionObserver(sticky, {
 });
 
 heroObs.observe(hero);
+
+////////////////////
+// Scroll Top Btn //
+////////////////////
+const scrollTopBtn = document.querySelector(".btn-scroll-top");
+
+function goTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+scrollTopBtn.addEventListener("click", goTop);
+
+const scroll = (entries, observer) => {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    scrollTopBtn.classList.remove("scroll-btn");
+  } else {
+    scrollTopBtn.classList.add("scroll-btn");
+  }
+};
+
+const obsHero = new IntersectionObserver(scroll, {
+  root: null,
+  threshold: 0.2,
+});
+
+obsHero.observe(hero);
